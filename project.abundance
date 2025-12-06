@@ -109,7 +109,7 @@
       "ioValues": [
         {
           "name": "xDist",
-          "ioValue": 0
+          "ioValue": -5
         },
         {
           "name": "yDist",
@@ -134,6 +134,38 @@
         }
       ],
       "currentEquation": "-1 * x"
+    },
+    {
+      "atomType": "Rotate",
+      "x": 0.5787760416666667,
+      "y": 0.5386904761904762,
+      "uniqueID": "id-8075",
+      "ioValues": [
+        {
+          "name": "x-axis degrees",
+          "ioValue": 0
+        },
+        {
+          "name": "y-axis degrees",
+          "ioValue": 0
+        },
+        {
+          "name": "z-axis degrees",
+          "ioValue": 10
+        }
+      ]
+    },
+    {
+      "atomType": "Difference",
+      "x": 0.7024739583333334,
+      "y": 0.3482142857142857,
+      "uniqueID": "id-8086"
+    },
+    {
+      "atomType": "Difference",
+      "x": 0.7805989583333334,
+      "y": 0.5922619047619048,
+      "uniqueID": "id-8090"
     }
   ],
   "allConnectors": [
@@ -153,9 +185,24 @@
       "ap2ID": "id-8055"
     },
     {
+      "ap2Name": "z-axis degrees",
+      "ap1ID": "id-8041",
+      "ap2ID": "id-8075"
+    },
+    {
+      "ap2Name": "geometry1",
+      "ap1ID": "id-8044",
+      "ap2ID": "id-8086"
+    },
+    {
       "ap2Name": "geometry",
       "ap1ID": "id-8051",
       "ap2ID": "id-8059"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-8051",
+      "ap2ID": "id-8065"
     },
     {
       "ap2Name": "xDist",
@@ -167,7 +214,36 @@
       "ap1ID": "id-8055",
       "ap2ID": "id-8071"
     },
-    null
+    {
+      "ap2Name": "geometry2",
+      "ap1ID": "id-8059",
+      "ap2ID": "id-8086"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-8065",
+      "ap2ID": "id-8075"
+    },
+    {
+      "ap2Name": "xDist",
+      "ap1ID": "id-8071",
+      "ap2ID": "id-8065"
+    },
+    {
+      "ap2Name": "geometry2",
+      "ap1ID": "id-8075",
+      "ap2ID": "id-8090"
+    },
+    {
+      "ap2Name": "geometry1",
+      "ap1ID": "id-8086",
+      "ap2ID": "id-8090"
+    },
+    {
+      "ap2Name": "number or geometry",
+      "ap1ID": "id-8090",
+      "ap2ID": "id-8036"
+    }
   ],
   "unitsKey": "Inches",
   "fileTypeVersion": 1,
