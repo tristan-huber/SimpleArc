@@ -1,13 +1,175 @@
 {
-    "atomType": "Molecule",
-    "x": 0,
-    "y": 0,
-    "uniqueID": "id-8035",
-    "name": "SimpleArc",
-    "topLevel": true,
-    "allAtoms": [],
-    "allConnectors": [],
-    "unitsKey": "Inches",
-    "fileTypeVersion": 1,
-    "filetypeVersion": 1
+  "atomType": "Molecule",
+  "x": 0,
+  "y": 0,
+  "uniqueID": "id-8035",
+  "name": "SimpleArc",
+  "ioValues": [
+    {
+      "name": "diameter",
+      "ioValue": 10
+    },
+    {
+      "name": "degrees",
+      "ioValue": 10
+    }
+  ],
+  "topLevel": true,
+  "allAtoms": [
+    {
+      "atomType": "Output",
+      "x": 0.98,
+      "y": 0.5,
+      "uniqueID": "id-8036"
+    },
+    {
+      "atomType": "Input",
+      "x": 0.025384615384615384,
+      "y": 0.31547619047619047,
+      "uniqueID": "id-8038",
+      "name": "diameter",
+      "type": "number"
+    },
+    {
+      "atomType": "Input",
+      "x": 0.025384615384615384,
+      "y": 0.6994047619047619,
+      "uniqueID": "id-8041",
+      "name": "degrees",
+      "type": "number"
+    },
+    {
+      "atomType": "Circle",
+      "x": 0.23763020833333337,
+      "y": 0.23511904761904764,
+      "uniqueID": "id-8044",
+      "ioValues": [
+        {
+          "name": "diameter",
+          "ioValue": 10
+        }
+      ]
+    },
+    {
+      "atomType": "Rectangle",
+      "x": 0.296875,
+      "y": 0.47619047619047616,
+      "uniqueID": "id-8051",
+      "ioValues": [
+        {
+          "name": "x length",
+          "ioValue": 10
+        },
+        {
+          "name": "y length",
+          "ioValue": 10
+        }
+      ]
+    },
+    {
+      "atomType": "Equation",
+      "x": 0.294921875,
+      "y": 0.6071428571428572,
+      "uniqueID": "id-8055",
+      "name": "x / 2",
+      "ioValues": [
+        {
+          "name": "x",
+          "ioValue": 10,
+          "currentEquation": "1"
+        }
+      ],
+      "currentEquation": "x / 2"
+    },
+    {
+      "atomType": "Move",
+      "x": 0.423828125,
+      "y": 0.46726190476190477,
+      "uniqueID": "id-8059",
+      "ioValues": [
+        {
+          "name": "xDist",
+          "ioValue": 5
+        },
+        {
+          "name": "yDist",
+          "ioValue": 0
+        },
+        {
+          "name": "zDist",
+          "ioValue": 0
+        }
+      ]
+    },
+    {
+      "atomType": "Move",
+      "x": 0.46289062500000006,
+      "y": 0.7142857142857143,
+      "uniqueID": "id-8065",
+      "ioValues": [
+        {
+          "name": "xDist",
+          "ioValue": 0
+        },
+        {
+          "name": "yDist",
+          "ioValue": 0
+        },
+        {
+          "name": "zDist",
+          "ioValue": 0
+        }
+      ]
+    },
+    {
+      "atomType": "Equation",
+      "x": 0.3678385416666667,
+      "y": 0.7202380952380952,
+      "uniqueID": "id-8071",
+      "name": "-1 * x",
+      "ioValues": [
+        {
+          "name": "x",
+          "ioValue": 5
+        }
+      ],
+      "currentEquation": "-1 * x"
+    }
+  ],
+  "allConnectors": [
+    {
+      "ap2Name": "diameter",
+      "ap1ID": "id-8038",
+      "ap2ID": "id-8044"
+    },
+    {
+      "ap2Name": "x length",
+      "ap1ID": "id-8038",
+      "ap2ID": "id-8051"
+    },
+    {
+      "ap2Name": "x",
+      "ap1ID": "id-8038",
+      "ap2ID": "id-8055"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-8051",
+      "ap2ID": "id-8059"
+    },
+    {
+      "ap2Name": "xDist",
+      "ap1ID": "id-8055",
+      "ap2ID": "id-8059"
+    },
+    {
+      "ap2Name": "x",
+      "ap1ID": "id-8055",
+      "ap2ID": "id-8071"
+    },
+    null
+  ],
+  "unitsKey": "Inches",
+  "fileTypeVersion": 1,
+  "filetypeVersion": 1
 }
