@@ -7,7 +7,8 @@
   "ioValues": [
     {
       "name": "diameter",
-      "ioValue": 10
+      "ioValue": 20,
+      "currentEquation": "20"
     },
     {
       "name": "degrees",
@@ -25,7 +26,7 @@
     {
       "atomType": "Input",
       "x": 0.025384615384615384,
-      "y": 0.31547619047619047,
+      "y": 0.15384615384615385,
       "uniqueID": "id-8038",
       "name": "diameter",
       "type": "number"
@@ -33,7 +34,7 @@
     {
       "atomType": "Input",
       "x": 0.025384615384615384,
-      "y": 0.6994047619047619,
+      "y": 0.24615384615384617,
       "uniqueID": "id-8041",
       "name": "degrees",
       "type": "number"
@@ -46,7 +47,7 @@
       "ioValues": [
         {
           "name": "diameter",
-          "ioValue": 10
+          "ioValue": 20
         }
       ]
     },
@@ -58,11 +59,11 @@
       "ioValues": [
         {
           "name": "x length",
-          "ioValue": 10
+          "ioValue": 20
         },
         {
           "name": "y length",
-          "ioValue": 10
+          "ioValue": 20
         }
       ]
     },
@@ -75,8 +76,7 @@
       "ioValues": [
         {
           "name": "x",
-          "ioValue": 10,
-          "currentEquation": "1"
+          "ioValue": 20
         }
       ],
       "currentEquation": "x / 2"
@@ -89,7 +89,7 @@
       "ioValues": [
         {
           "name": "xDist",
-          "ioValue": 5
+          "ioValue": 10
         },
         {
           "name": "yDist",
@@ -109,7 +109,7 @@
       "ioValues": [
         {
           "name": "xDist",
-          "ioValue": -5
+          "ioValue": -10
         },
         {
           "name": "yDist",
@@ -130,7 +130,7 @@
       "ioValues": [
         {
           "name": "x",
-          "ioValue": 5
+          "ioValue": 10
         }
       ],
       "currentEquation": "-1 * x"
@@ -183,6 +183,11 @@
       "ap2Name": "x",
       "ap1ID": "id-8038",
       "ap2ID": "id-8055"
+    },
+    {
+      "ap2Name": "y length",
+      "ap1ID": "id-8038",
+      "ap2ID": "id-8051"
     },
     {
       "ap2Name": "z-axis degrees",
