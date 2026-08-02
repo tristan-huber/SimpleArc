@@ -7,8 +7,7 @@
   "ioValues": [
     {
       "name": "diameter",
-      "ioValue": 20,
-      "currentEquation": "20"
+      "ioValue": 20
     },
     {
       "name": "degrees",
@@ -21,20 +20,26 @@
       "atomType": "Output",
       "x": 0.98,
       "y": 0.5,
-      "uniqueID": "id-8036"
+      "uniqueID": "id-8036",
+      "ioValues": [
+        {
+          "name": "number or geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ]
     },
     {
       "atomType": "Input",
-      "x": 0.025384615384615384,
-      "y": 0.15384615384615385,
+      "x": 0.0231,
+      "y": 0.14,
       "uniqueID": "id-8038",
       "name": "diameter",
       "type": "number"
     },
     {
       "atomType": "Input",
-      "x": 0.025384615384615384,
-      "y": 0.24615384615384617,
+      "x": 0.0231,
+      "y": 0.22400000000000003,
       "uniqueID": "id-8041",
       "name": "degrees",
       "type": "number"
@@ -88,6 +93,10 @@
       "uniqueID": "id-8059",
       "ioValues": [
         {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
           "name": "xDist",
           "ioValue": 10
         },
@@ -107,6 +116,10 @@
       "y": 0.7142857142857143,
       "uniqueID": "id-8065",
       "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
         {
           "name": "xDist",
           "ioValue": -10
@@ -142,6 +155,10 @@
       "uniqueID": "id-8075",
       "ioValues": [
         {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
           "name": "x-axis degrees",
           "ioValue": 0
         },
@@ -159,13 +176,33 @@
       "atomType": "Difference",
       "x": 0.7024739583333334,
       "y": 0.3482142857142857,
-      "uniqueID": "id-8086"
+      "uniqueID": "id-8086",
+      "ioValues": [
+        {
+          "name": "retain",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "remove",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ]
     },
     {
       "atomType": "Difference",
       "x": 0.7805989583333334,
       "y": 0.5922619047619048,
-      "uniqueID": "id-8090"
+      "uniqueID": "id-8090",
+      "ioValues": [
+        {
+          "name": "retain",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "remove",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ]
     }
   ],
   "allConnectors": [
@@ -195,7 +232,7 @@
       "ap2ID": "id-8075"
     },
     {
-      "ap2Name": "geometry1",
+      "ap2Name": "retain",
       "ap1ID": "id-8044",
       "ap2ID": "id-8086"
     },
@@ -220,7 +257,7 @@
       "ap2ID": "id-8071"
     },
     {
-      "ap2Name": "geometry2",
+      "ap2Name": "remove",
       "ap1ID": "id-8059",
       "ap2ID": "id-8086"
     },
@@ -235,12 +272,12 @@
       "ap2ID": "id-8065"
     },
     {
-      "ap2Name": "geometry2",
+      "ap2Name": "remove",
       "ap1ID": "id-8075",
       "ap2ID": "id-8090"
     },
     {
-      "ap2Name": "geometry1",
+      "ap2Name": "retain",
       "ap1ID": "id-8086",
       "ap2ID": "id-8090"
     },
