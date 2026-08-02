@@ -4,6 +4,12 @@
 
 ![](/project.svg)
 
+## Inputs
+
+- **diameter** (number)
+- **degrees** (number)
+
+
 
 
  
